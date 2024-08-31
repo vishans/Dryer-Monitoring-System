@@ -12,7 +12,7 @@
 
 <br>
 
-The Dryer Monitoring System is a real-time solution designed to monitor the operational status of a dryer using an ESP32 microcontroller, limit switches, and a web-based interface. This project provides users with instant updates and historical data logging, allowing them to track their dryer usage and optimize drying schedules for better efficiency.
+The Dryer Monitoring System is a real-time solution designed to monitor the operational status of a dryer using an ESP32 microcontroller, limit switches, and a web-based interface. This project provides users with instant updates and historical data logging, allowing them to track their dryer usage and optimize drying schedules for better efficiency. Check out the [documentation](repo/docs/Dryer%20Monitoring%20System%20Documentation.pdf)!
 
 ## ✨ Features
 
@@ -80,7 +80,7 @@ Initially, the project used a vibration sensor to monitor the dryer’s operatio
 ---
 ## Note on Repository Contents ⚠️
 
-This is the public version of the Dryer Monitoring System repository. It includes all the essential code and documentation needed to understand and use the system. Rest assured, this repository is fully functional, and all the code provided works as intended. You should be able to run the system smoothly using the provided instructions in the [documentation](repo/documentation/ReM%20Technical%20Design%20Documentation.pdf).
+This is the public version of the Dryer Monitoring System repository. It includes all the essential code and documentation needed to understand and use the system. Rest assured, this repository is fully functional, and all the code provided works as intended. You should be able to run the system smoothly using the provided instructions in the [documentation](repo/docs/Dryer%20Monitoring%20System%20Documentation.pdf).
 
 For security and privacy reasons, sensitive data, development configurations, and detailed commit history have been removed. This public repository was cloned from the private version and sanitized to exclude any sensitive information. The private repository, which contains the full commit history and sensitive details, is restricted to authorized personnel only.
 
