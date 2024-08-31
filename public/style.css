@@ -1,0 +1,176 @@
+.material-symbols-light--local-laundry-service-outline-sharp {
+    display: inline-block;
+    width: 4em; /* Adjust size as needed */
+    height: 4em; /* Adjust size as needed */
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M5 21V3h14v18zm1-1h12V4H6zm6-1.77q1.756 0 2.993-1.237T16.231 14t-1.238-2.993T12 9.769t-2.993 1.238T7.769 14t1.238 2.993T12 18.231m0-.931q-.65 0-1.253-.247t-1.059-.703l4.662-4.661q.456.455.703 1.062q.247.606.247 1.249q0 1.375-.962 2.338T12 17.3M8 7q.425 0 .713-.288T9 6t-.288-.712T8 5t-.712.288T7 6t.288.713T8 7m3 0q.425 0 .713-.288T12 6t-.288-.712T11 5t-.712.288T10 6t.288.713T11 7M6 20V4z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 15% auto 10%;
+    width: 100vw;
+    height: 100vh;
+   
+
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#5a45f7 0.9500000000000001px, #e5e5f7 0.9500000000000001px);
+    background-size: 19px 19px;
+
+}
+
+nav {
+    grid-row: 1 / 2;
+    color: #1c3f5c;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px; /* Optional: add some left padding */
+
+    background-color: rgba(255, 255, 255, 0.95); /* White with 80% opacity */
+    padding: 10px; /* Add some padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+nav ul {
+    width: max(30%, 300px); /* Adjust the width as needed */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+    
+}
+
+nav ul li {
+    //margin: 0 150px; /* Adjust the margin between items as needed */
+}
+
+nav ul li a {
+    text-decoration: none;
+    //color: white; /* Change the link color to whatever you prefer */
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px; /* Adjust the margin between items as needed */
+}
+
+nav ul li a {
+    text-decoration: none;
+    //color: white; /* Change the link color to whatever you prefer */
+}
+
+
+.hero {
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-direction: column;
+}
+
+#gif{
+    height: 40vh;
+    width: auto;
+    object-fit: cover;
+
+}
+
+#status{
+    background-color: rgba(255, 255, 255, 0.95); /* White with 80% opacity */
+    font-size: 4vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer {
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.95); /* White with 80% opacity */
+
+}
+
+code{
+    padding: 10px;
+}
+
+#overlay {
+    display:none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    z-index: 10; /* Layer above the content */
+}
+
+.popup-container.show, #overlay.show {
+    display: block;
+}
+
+/* Popup container */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20; /* Layer above the overlay */
+}
+
+#popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 70vw;
+
+    align-items: center;
+    justify-content:space-around;
+    
+}
+
+#popup button{
+    width: 50%;
+    height: 10%;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dryer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/"><i class="material-symbols-light--local-laundry-service-outline-sharp"></i></a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/systemHealth">System Health</a></li>
+
+            <!-- <li><a href="#">Contact</a></li> -->
+        </ul>
+    </nav>
+    <div class="hero">
+        
+        <img id="gif" src="dryerNotRunning.png" alt="Dryer Picture">
+        <div id="status"></div>
+    </div>
+    <div class="footer">
+        This service is still in beta. <br>
+        NOTE: It takes about 5s for the system to detect the dryer status.
+        
+    </div>
+
+    <div id="overlay"></div>
+
+    <div class="popup-container">
+        <div id="popup">
+            <h2>NOTICE</h2>
+            <div class="message">
+                Please kindly avoid using the dryer after 10:30 P.M. to help maintain a peaceful environment and avoid any disturbances. Your cooperation is greatly appreciated.
+            </div>
+            <button id="popup-ok">OK</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

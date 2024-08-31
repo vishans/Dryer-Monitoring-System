@@ -1,0 +1,33 @@
+.accordion {
+    width: 100%;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    width: 70%;
+    text-align: center;
+
+}
+
+.accordion-header {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.accordion-content.active {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.95);
+    font-size: 3.5vh;
+
+}

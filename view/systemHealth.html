@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/"><i class="material-symbols-light--local-laundry-service-outline-sharp"></i></a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/systemHealth">System Health</a></li>
+        </ul>
+    </nav>
+    <div class="hero" style="display: flex; justify-content: space-evenly;">
+        <h1 style="justify-content: flex-start;">System Health</h1>
+
+        <p id="status"> System is running.</p>
+        <code id="req"></code>
+    </div>
+    <div class="footer">
+        This service is still in beta. <br>
+        NOTE: It takes about 5s for the system to detect the dryer status.
+    </div>
+    
+</body>
+<script src="health.js"></script>
+</html>

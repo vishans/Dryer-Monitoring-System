@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="accordion.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/"><i class="material-symbols-light--local-laundry-service-outline-sharp"></i></a></li>
+            <!-- <li><a href="#">About</a></li> -->
+            <!-- <li><a href="#">Contact</a></li> -->
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/systemHealth">System Health</a></li>
+
+        </ul>
+    </nav>
+    <div class="hero accordion">
+        <h1>FAQ</h1>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">Q: How does this work?</h2>
+            <p class="accordion-content">A: There are 3 limit switches around the dryer dial to detect its position. The system can thus determine if the machine is on or off.</p>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">Q: Is there an electrocution risk?</h2>
+            <p class="accordion-content">A: No. The system operates at 3.3V DC. As comparison, a modern smartphone operates at around 3.7V DC.</p>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">Q: What does the system monitor exactly?</h2>
+            <p class="accordion-content">A: The system can only tell when the dryer is on or off. <br>
+            It does not know who is using the dryer at any time.</p>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">Q: How long does it take to detect the dryer status?</h2>
+            <p class="accordion-content">A: About  5 seconds.</p>
+        </div>
+    
+        <div class="accordion-item">
+            <h2 class="accordion-header">Q: Where can I access this service?</h2>
+            <p class="accordion-content">A: This service only operates within the house's Wi-Fi network. If you're not connected to this network, you won't have access to it.</p>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">Q: When can I access this service?</h2>
+            <p class="accordion-content">A: I am running this on my PC. If and when I turn off this PC, the service will be interrupted.</p>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">Q: Will the link to this website ever change?</h2>
+            <p class="accordion-content">A: It is possible. I will let you know if ever the link has changed.</p>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">Q: What happened to the last version of the system?</h2>
+            <p class="accordion-content">A: Because the washer sometimes vibrates vehemently when in use, it would occasionally false trigger the vibration sensor. I am now using limit switches, which are far more reliable.</p>
+        </div>
+
+
+    
+    </div>
+    <div class="footer">
+        This service is still in beta. <br>
+        NOTE: It takes about 5s for the system to detect the dryer status.
+    </div>
+</body>
+<script src="accordion.js"></script>
+</html>
