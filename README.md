@@ -4,7 +4,13 @@
     <img src="repo/assets/dashboard.gif" alt="Dashboard">
 </div>
 
+<br>
 
+<div align="center">
+    <img src="repo/assets/dryer dial.jpg" alt="Dryer Dial with Limit Switches" height="500px">
+</div>
+
+<br>
 
 The Dryer Monitoring System is a real-time solution designed to monitor the operational status of a dryer using an ESP32 microcontroller, limit switches, and a web-based interface. This project provides users with instant updates and historical data logging, allowing them to track their dryer usage and optimize drying schedules for better efficiency.
 
