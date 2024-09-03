@@ -30,7 +30,8 @@ function formatDateTime(unixTimeInSeconds) {
     });
 
     // Combine the day, time, and duration
-    return `${dayOfWeek}, ${formattedTime}<br>(${durationString})`;
+    //return `${dayOfWeek}, ${formattedTime}<br>(${durationString})`;
+    return [dayOfWeek, formattedTime, durationString];
 }
 
 async function getDryerState() {
@@ -58,13 +59,32 @@ async function handleDryerState() {
        if(dryerState == 1){
             gif.src = "dryerRunning.WEBP";
             gif.style.borderTop = "solid 5px green";
-            status_.innerHTML = "Dryer is in use <br> Since: " + formatDateTime(savedTime);
+            const [dayOfWeek, formattedTime, durationString] = formatDateTime(savedTime);
+            const message = `${dayOfWeek}, ${formattedTime}<br>(${durationString})`;
+
+            status_.innerHTML = "Dryer is in use <br> Since: " + message;
             status_.style.width =  gif.width + 'px';
 
         }else{
             gif.src = "dryerNotRunning.png";
             gif.style.borderTop = "solid 5px red";
-            status_.innerHTML = "Dryer is not in use <br> Since: " + formatDateTime(savedTime);
+            const [dayOfWeek, formattedTime, durationString] = formatDateTime(savedTime);
+            const message = `${dayOfWeek}, ${formattedTime}<br>(${durationString})`;
+
+            const homestretch = ['0 min', '1 min', '2 min', '3 min', '4 min', '5 min'];
+            let additionalMessage;
+            if(homestretch.includes(durationString)){
+                const remainingTime = parseInt(durationString.split(" ")[0],10);
+                additionalMessage = 
+                `<div style="color: red;">Dryer might still be running. Wait up for ${5 - remainingTime} more minute(s)!</div>`;
+                status_.innerHTML = additionalMessage
+
+            }else{
+                additionalMessage = '';
+                status_.innerHTML = "Dryer is not in use <br> Since: " + message +additionalMessage;
+            }
+
+
             status_.style.width =  gif.width + 'px';
         }
 

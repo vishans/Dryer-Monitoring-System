@@ -1,4 +1,4 @@
-const { now } = require('./datetime');
+const { now, getCurrentDateTime } = require('./datetime');
 const { appendDataToFile } = require('./storage');
 
 let dryerState = undefined;
@@ -12,6 +12,9 @@ let systemHealth = 0;
 exports.dryerController = async (req, res) => {
   res.send();
   const v = req.params.v;
+
+  console.log(getCurrentDateTime() + " " + v);
+
   lastDryerState = dryerState;
   dryerState = v;
 

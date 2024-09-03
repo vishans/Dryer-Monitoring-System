@@ -114,6 +114,7 @@ nav ul li a {
     align-items: center;
     text-align: center;
     padding-bottom: 10px;
+    flex-direction: column;
 }
 
 .footer {
